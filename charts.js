@@ -123,6 +123,7 @@ function buildCharts(sample) {
     // Deliverable 2: 2. Create the layout for the bubble chart.
     var layout = {
       title: "Bacterial Cultures Per Sample",
+      hovermode: "closest",
       height: 600,
       width: 1000
     }
@@ -135,7 +136,7 @@ function buildCharts(sample) {
       {
         domain: { x: [0, 10], y: [0, 10] },
         value: washResults.wfreq,
-        title: { text: "Belllybutton Washing Frequency" },
+        title: { text: "Belly Button Washing Frequency" },
         type: "indicator",
         mode: "gauge+number",
         gauge: {
